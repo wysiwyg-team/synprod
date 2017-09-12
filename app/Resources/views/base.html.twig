@@ -1,0 +1,54 @@
+{{  include('parts/header.html.twig')  }}
+<!--
+    INFO:
+    Add 'boxed' class to body element to make the layout as boxed style.
+    Example:
+    <body class="boxed">
+-->
+<body>
+
+<!-- Loader -->
+<div class="fh5co-loader"></div>
+{% block menu %}
+    {{  include ('parts/menu.html.twig') }}
+{% endblock %}
+
+<div id="fh5co-page">
+    <!-- #fh5co-header -->
+    <!-- END #fh5co-hero -->
+    {% block banner %}
+    {{ include ('parts/banner.html.twig')}}
+    {% endblock %}
+    {% block project %}
+    {{  include ('parts/project.html.twig') }}
+    {% endblock %}
+
+    <!-- END #fh5co-projects -->
+    {% block about %}
+    {% endblock %}
+
+    {% block features %}
+        {{  include ('parts/features.html.twig') }}
+        <!-- END #fh5co-features --><!-- END #fh5co-features-2 -->
+    {% endblock %}
+    {% block design %}
+    {% endblock %}
+    {% block tableau %}
+    {% endblock %}
+    {% block faq %}
+    {% endblock %}
+
+
+    {{  include ('parts/testimonials.html.twig') }}
+    <!-- END #fh5co-testimonials -->
+    {{  include ('parts/subscriber.html.twig') }}
+    <!-- END #fh5co-subscribe -->
+    {{  include ('parts/footer.html.twig') }}
+</div>
+<!-- END #fh5co-page -->
+{{  include ('parts/javascripts.html.twig') }}
+
+</body>
+</html>
+
+

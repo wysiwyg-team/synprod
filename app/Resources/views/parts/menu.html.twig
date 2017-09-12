@@ -1,0 +1,16 @@
+<section id="fh5co-header">
+    <div class="container">
+        <nav role="navigation">
+            <ul class="pull-left left-menu">
+                <li {% if activeMenu ==1 %}class="active"{% endif %}><a href="{{ path('about') }}">A propos</a></li>
+                <li {% if activeMenu ==2 %}class="active"{% endif %}><a href="{{ path('tour') }}">Tour</a></li>
+                <li {% if activeMenu ==3 %}class="active"{% endif %}><a href="{{ path('prix') }}">Prix</a></li>
+            </ul>
+            <h1 id="fh5co-logo"><a href="{{ path('homepage') }}">Synprod<span>.</span></a></h1>
+            <ul class="pull-right right-menu">
+                <li><a href="#">Login</a></li>
+                <li class="fh5co-cta-btn"><a href="#">Sign up</a></li>
+            </ul>
+        </nav>
+    </div>
+</section>
