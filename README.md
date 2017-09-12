@@ -1,2 +1,0 @@
-# synprod
-Synprod project
