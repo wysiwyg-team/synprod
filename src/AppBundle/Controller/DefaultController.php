@@ -24,7 +24,12 @@ class DefaultController extends Controller
     public function indexAction(Request $request)
     {
         // replace this example code with whatever you need
+        //projects (packages)
+        $projects = $this->getDoctrine()
+            ->getRepository('AppBundle:Package')
+            ->findAll();
 
+        $this->data['projects'] = $projects;
         return $this->render('default/index.html.twig',$this->data);
     }
 

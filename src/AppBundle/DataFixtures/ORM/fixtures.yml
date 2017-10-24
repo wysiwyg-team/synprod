@@ -1,0 +1,33 @@
+AppBundle\Entity\Client:
+    client_{1..10}:
+        companyName: <company()>
+        addressLine1: <buildingNumber()>
+        addressLine2: <city()>
+        addressLine3: <streetAddress()>
+        country: <country()>
+        description: <text()>
+        comment: <sentence()>
+        businessNo: <numberBetween(1000,9000)>
+        isPublished: <boolean(75)>
+        Package: '@package_*'
+
+
+AppBundle\Entity\Package:
+    package_{1..10}:
+        packageName: <packages()>
+        description: <realText(200, 2)>
+        dateupdated: <dateTimeBetween('-6 months', 'now')>
+        image: 'img_<numberBetween(1, 6)>.jpg'
+        category: '@category_*'
+
+
+AppBundle\Entity\User:
+    user_{1..5}:
+        email: 'support<current()>@gmail.com'
+        plainPassword: 'tester<current()>'
+        roles: ['ROLE_ADMIN']
+
+AppBundle\Entity\Category:
+    category_{1..5}:
+        categoryName: <domainWord()>
+        status: '<numberBetween(0, 1)>'

@@ -1,0 +1,27 @@
+{{  include('parts/header.html.twig')  }}
+<!--
+    INFO:
+    Add 'boxed' class to body element to make the layout as boxed style.
+    Example:
+    <body class="boxed">
+-->
+<body>
+
+<!-- Loader -->
+<div class="fh5co-loader"></div>
+{% block menu %}
+    {{  include ('parts/menu.html.twig') }}
+{% endblock %}
+
+<div id="fh5co-page">
+    <!-- #fh5co-header -->
+    <!-- END #fh5co-hero -->
+    {% block banner %}
+    {% endblock %}
+
+</div>
+<!-- END #fh5co-page -->
+{{  include ('parts/javascripts.html.twig') }}
+
+</body>
+</html>
