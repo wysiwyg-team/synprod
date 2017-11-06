@@ -6,17 +6,8 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 
-class DefaultController extends Controller
+class DefaultController extends BaseController
 {
-    public $data =[];
-    public function __construct(){
-        $this->data = [
-            'activeMenu'=>0,
-            'bannerText'=>'Connectez vos applications ensemble',
-            'bannerMore'=>'Voir plus.',
-
-        ];
-    }
 
     /**
      * @Route("/", name="homepage")
@@ -59,16 +50,5 @@ class DefaultController extends Controller
         return $this->render('default/tour.html.twig',$this->data);
     }
 
-    /**
-     * @Route("/prix", name="prix")
-     */
-    public function prixAction(Request $request)
-    {
-        // replace this example code with whatever you need
-        $this->data['bannerslogan']='Nos prix sont adapté pour chaque besoins.';
-        $this->data['bannerText']='Plans pour tout le monde.';
-        $this->data['activeMenu']=3;
 
-        return $this->render('default/prix.html.twig',$this->data);
-    }
 }

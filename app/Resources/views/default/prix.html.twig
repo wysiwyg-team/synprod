@@ -6,68 +6,20 @@
     <section id="fh5co-pricing">
         <div class="container">
             <div class="row">
-                <div class="col-md-3 col-sm-6 animate-box">
-                    <div class="price-box">
-                        <h2 class="pricing-plan">Starter</h2>
-                        <div class="price"><sup class="currency">$</sup>7<small>/mo</small></div>
-                        <p>Basic customer support for small business</p>
-                        <hr>
-                        <ul class="pricing-info">
-                            <li>10 projects</li>
-                            <li>20 Pages</li>
-                            <li>20 Emails</li>
-                            <li>100 Images</li>
-                        </ul>
-                        <a href="#" class="btn btn-default btn-sm">Get started</a>
+                <!--get only the on premise packages -->
+                {% for package in onpremisepackages %}
+                    <div class="col-md-3 col-sm-6 animate-box">
+                        <div class="price-box">
+                            <h1>{{ package.PackageName| title }}</h1>
+                            <h2 class="pricing-plan">{{ onpremiseCategory.categoryName}} - {{ package.packageType.PackageTypeName}}</h2>
+                            <div class="price"><sup class="currency">$</sup>{{ package.price }}<small>/mo</small></div>
+                            <p>{{ package.Description|length < 100 ?  package.Description :  package.Description|slice(0, 100) ~'...' }}</p><a href="#">See more</a><hr>
+                            <ul class="pricing-info">
+                            </ul>
+                            <a href="{{ path('package/detail/service',{'package': package.id, 'packageName': package.PackageName}) }}" class="btn btn-default btn-sm">Get started</a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-3 col-sm-6 animate-box">
-                    <div class="price-box">
-                        <h2 class="pricing-plan">Regular</h2>
-                        <div class="price"><sup class="currency">$</sup>19<small>/mo</small></div>
-                        <p>Basic customer support for small business</p>
-                        <hr>
-                        <ul class="pricing-info">
-                            <li>15 projects</li>
-                            <li>40 Pages</li>
-                            <li>40 Emails</li>
-                            <li>200 Images</li>
-                        </ul>
-                        <a href="#" class="btn btn-default btn-sm">Get started</a>
-                    </div>
-                </div>
-                <div class="clearfix visible-sm-block"></div>
-                <div class="col-md-3 col-sm-6 animate-box">
-                    <div class="price-box popular">
-                        <div class="popular-text">Best value</div>
-                        <h2 class="pricing-plan">Plus</h2>
-                        <div class="price"><sup class="currency">$</sup>79<small>/mo</small></div>
-                        <p>Basic customer support for small business</p>
-                        <hr>
-                        <ul class="pricing-info">
-                            <li>Unlimitted projects</li>
-                            <li>100 Pages</li>
-                            <li>100 Emails</li>
-                            <li>700 Images</li>
-                        </ul>
-                        <a href="#" class="btn btn-primary btn-sm">Get started</a>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 animate-box">
-                    <div class="price-box">
-                        <h2 class="pricing-plan">Enterprise</h2>
-                        <div class="price"><sup class="currency">$</sup>125<small>/mo</small></div>
-                        <p>Basic customer support for small business</p>
-                        <hr>
-                        <ul class="pricing-info">
-                            <li>Unlimitted projects</li>
-                            <li>Unlimitted Pages</li>
-                            <li>Unlimitted Emails</li>
-                            <li>Unlimitted Images</li>
-                        </ul>
-                        <a href="#" class="btn btn-default btn-sm">Get started</a>
-                    </div>
-                </div>
+                {% endfor %}
 
             </div>
         </div>

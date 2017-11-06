@@ -11,6 +11,7 @@ use Symfony\Component\Security\Core\User\UserInterface;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
+use AppBundle\Validator\Constraints as myAssert;
 
 
 
@@ -23,9 +24,9 @@ class User implements UserInterface
 {
 
     /**
-     * @Assert\Email()
+     * @myAssert\MyEmail()
      * @ORM\Column(type="string", unique=true)
-     * @Assert\NotBlank()
+     * @Assert\NotBlank(message = "L'email ne peut etre vide")
      */
     private $email;
     /**
@@ -40,7 +41,7 @@ class User implements UserInterface
     private $id;
 
     /**
-     * @Assert\NotBlank();
+     * @Assert\NotBlank(message = "Le mot de passe ne peut etre vide");
      * @var string
      * @ORM\Column(type="string")
      */

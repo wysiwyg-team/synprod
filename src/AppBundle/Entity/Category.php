@@ -7,6 +7,7 @@
  */
 
 namespace AppBundle\Entity;
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -28,6 +29,11 @@ class Category
     private $id;
 
     /**
+     * @ORM\OneToMany(targetEntity="AppBundle\Entity\Package", mappedBy="category")
+     */
+    private $packages;
+
+    /**
      * @ORM\Column(type="string")
      */
     private $categoryName;
@@ -40,6 +46,12 @@ class Category
     /**
      * @return string
      */
+
+    public function __construct()
+    {
+        $this->packages = new ArrayCollection();
+    }
+
     public function getId()
     {
         return $this->id;
@@ -60,6 +72,8 @@ class Category
     {
         return $this->categoryName;
     }
+
+
 
     /**
      * @param mixed $categoryName
@@ -85,10 +99,10 @@ class Category
         $this->status = $status;
     }
 
-    public function __toString()
+
+    public function getPackages()
     {
-        // TODO: Implement __toString() method.
-        return  (string)$this->id;
+        return $this->packages;
     }
 
 }

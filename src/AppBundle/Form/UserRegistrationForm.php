@@ -16,10 +16,13 @@ class UserRegistrationForm extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('email', EmailType::class)
-            ->add('plainPassword', RepeatedType::class, [
-                'type' => PasswordType::class
-            ]);
+            ->add('email', EmailType::class, array('label'=>'Votre email','label_attr'=> array('CLASS'=>'mycclass')))
+            ->add('plainPassword', RepeatedType::class, array(
+                'type' => PasswordType::class,
+                'first_options'  => array('label' => 'Mot de passe'),
+                'second_options' => array('label' => 'Enter votre mot de passe encore'),
+                'invalid_message' => 'Les mots de passe ne sont pas identique.',
+            ));
     }
 
     public function configureOptions(OptionsResolver $resolver)

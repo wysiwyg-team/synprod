@@ -36,10 +36,9 @@ class Package
         $this->category = $category;
     }
     /**
-     * @ORM\Column(type="string")
-     * @Assert\NotBlank()
-     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Category")
-     * @ORM\JoinColumn(nullable=false)
+
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Category", inversedBy="packages")
+     * @ORM\JoinColumn(nullable=false,name="category_id", referencedColumnName="id")
      */
     private $category;
 
@@ -54,6 +53,49 @@ class Package
      * @ORM\JoinColumn(nullable=false)
      */
     private $client;
+
+    /**
+     * @ORM\Column(type="string")
+     */
+    private $price;
+
+    /**
+     * @return mixed
+     */
+    public function getPrice()
+    {
+        return $this->price;
+    }
+
+    /**
+     * @param mixed $price
+     */
+    public function setPrice($price)
+    {
+        $this->price = $price;
+    }
+
+    /**
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\PackageType", inversedBy="package")
+     * @ORM\JoinColumn(nullable=true)
+     */
+    private $packageType;
+
+    /**
+     * @return mixed
+     */
+    public function getPackageType()
+    {
+        return $this->packageType;
+    }
+
+    /**
+     * @param mixed $packageType
+     */
+    public function setPackageType($packageType)
+    {
+        $this->packageType = $packageType;
+    }
 
     /**
      * @ORM\Id
