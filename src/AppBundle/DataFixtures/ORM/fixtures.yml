@@ -19,6 +19,8 @@ AppBundle\Entity\Package:
         dateupdated: <dateTimeBetween('-6 months', 'now')>
         image: 'img_<numberBetween(1, 6)>.jpg'
         category: '@category_*'
+        price: <numberBetween(5000,9000)>
+        packageType: '@packagetype_*'
 
 
 AppBundle\Entity\User:
@@ -26,8 +28,14 @@ AppBundle\Entity\User:
         email: 'support<current()>@gmail.com'
         plainPassword: 'tester<current()>'
         roles: ['ROLE_ADMIN']
+        apiKey: <numberBetween(1000,9000)>
 
 AppBundle\Entity\Category:
     category_{1..5}:
         categoryName: <domainWord()>
+        status: '<numberBetween(0, 1)>'
+
+AppBundle\Entity\PackageType:
+    packagetype_{1..5}:
+        package_type_name: 'package-type<current()>'
         status: '<numberBetween(0, 1)>'

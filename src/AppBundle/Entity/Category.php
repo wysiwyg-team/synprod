@@ -104,5 +104,9 @@ class Category
     {
         return $this->packages;
     }
+    public function __toString() {
+
+        return (string)$this->id;
+    }
 
 }

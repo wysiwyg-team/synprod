@@ -20,6 +20,20 @@ use Symfony\Component\Validator\Constraints as Assert;
 class Client
 {
     /**
+     *  @return \Doctrine\Common\Collections\Collection
+     */
+    public function getUser()
+    {
+        return $this->user;
+    }
+
+    /**
+     * @ORM\OneToOne(targetEntity="AppBundle\Entity\User", inversedBy="client" )
+     * @ORM\JoinColumn(name="user_id", referencedColumnName="id")
+     */
+    private $user;
+
+    /**
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="AUTO")
      * @ORM\Column(type="integer")
@@ -270,6 +284,9 @@ class Client
     }
 
 
-
+    public function __toString()
+    {
+       return (string)$this->id;
+    }
 
 }

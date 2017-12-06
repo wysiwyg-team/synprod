@@ -7,6 +7,7 @@
  */
 
 namespace AppBundle\Entity;
+use Doctrine\Common\Collections\ArrayCollection;
 use Symfony\Component\Security\Core\User\UserInterface;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
@@ -22,6 +23,19 @@ use AppBundle\Validator\Constraints as myAssert;
  */
 class User implements UserInterface
 {
+    /**
+     * @ORM\OneToOne(targetEntity="AppBundle\Entity\Client", mappedBy="user" )
+
+     */
+    private $client;
+
+    /**
+     * @return ORM\Entity |Client
+     */
+    public function getClient()
+    {
+        return $this->client;
+    }
 
     /**
      * @myAssert\MyEmail()
@@ -33,6 +47,11 @@ class User implements UserInterface
      * @ORM\Column(type="string")
      */
     private $password;
+
+    /**
+     * @ORM\Column(type="string",unique=true)
+     */
+    private $apiKey;
     /**
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="AUTO")
@@ -104,7 +123,8 @@ class User implements UserInterface
 
     public function eraseCredentials()
     {
-        $this->plainPassword = null;
+       if( strpos(debug_backtrace()[1]['class'],'Token')===0)
+           $this->plainPassword = null;
     }
 
     /**

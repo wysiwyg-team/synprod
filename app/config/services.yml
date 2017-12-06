@@ -35,9 +35,12 @@ services:
     #         $someArgument: 'some_value'
 
     app.security.login_form_authenticator:
-            class: AppBundle\LoginFormAuthenticator
+            class: AppBundle\Security\LoginFormAuthenticator
             autowire: true
 
+    api.security.token_authenticator:
+                class: Api\Security\TokenAuthenticator
+                autowire: true
 
     app.doctrine.hash_password_listener:
             class: AppBundle\Doctrine\HashPasswordListener

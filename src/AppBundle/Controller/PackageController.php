@@ -4,8 +4,8 @@ namespace AppBundle\Controller;
 
 use AppBundle\AppBundle;
 use AppBundle\Entity\Package;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
-use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Response;
 
 
@@ -19,7 +19,7 @@ class PackageController extends BaseController
 
     /**
      * @param Package $package
-     * @Route("/{packageName}/{package}", name ="package/detail/service")
+     * @Route("/detail/{packageName}/{package}", name ="package_detail")
      */
     public function showPackage($package=null)
     {
@@ -40,11 +40,33 @@ class PackageController extends BaseController
             $this->createNotFoundException('Package introuvable');
         $packageObj = $this->data['package'];
         $this->data['bannerslogan']=substr($packageObj->getDescription(),0,150);
+        $target = $this->generateUrl("package_buy",array('package'=>$packageObj->getId()));
+        $this->data['bannerslogan'].='...<a href="'.$target.'" class="btn btn-default btn-sm">Buy</a>';
         $this->data['bannerText']= $packageObj->getPackageName();
 
 
         return $this->render('package/show.html.twig',$this->data);
 
+    }
+
+    /**
+     * @Route("/buy/{package}", name ="package_buy")
+     * @Method("GET")
+     * @param PackageId
+     * @return Response
+     */
+    public function  buyPackage($package)
+    {
+        $em = $this->getDoctrine()->getManager();
+
+        $packageObj = $em->getRepository(Package::class)
+            ->findOneBy(['id' => $package]);
+
+        if (!$packageObj) {
+            throw $this->createNotFoundException('Package introuvable');
+        }
+
+        return New Response('you buy me'.$packageObj->getPackageName());
     }
 
 

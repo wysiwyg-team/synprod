@@ -6,6 +6,8 @@ security:
     providers:
         our_users:
             entity: { class: AppBundle\Entity\User, property: email }
+        your_db_provider:
+            entity: { class: AppBundle:User, property: apiKey }
 
     firewalls:
         # disables authentication for assets and the profiler, adapt it according to your needs
@@ -26,6 +28,10 @@ security:
             guard:
                 authenticators:
                       - app.security.login_form_authenticator
+                      - api.security.token_authenticator
+
+                entry_point: app.security.login_form_authenticator
+
 
             logout:
                 path: /logout
@@ -34,5 +40,5 @@ security:
         AppBundle\Entity\User: bcrypt
 
     #Need to uncomment to deny access to path admin
-    #access_control:
-    #    -{ path: ^/admin, roles: ROLE_USER }
+    access_control:
+        - { path: ^/api, roles: ROLE_API_CLIENT }

@@ -6,7 +6,7 @@
  * Time: 11:02
  */
 
-namespace AppBundle;
+namespace AppBundle\Security;
 
 
 use AppBundle\Form\LoginForm;

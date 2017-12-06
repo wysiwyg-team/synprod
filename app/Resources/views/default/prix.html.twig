@@ -16,7 +16,7 @@
                             <p>{{ package.Description|length < 100 ?  package.Description :  package.Description|slice(0, 100) ~'...' }}</p><a href="#">See more</a><hr>
                             <ul class="pricing-info">
                             </ul>
-                            <a href="{{ path('package/detail/service',{'package': package.id, 'packageName': package.PackageName}) }}" class="btn btn-default btn-sm">Get started</a>
+                            <a href="{{ path('package_detail',{'package': package.id, 'packageName': package.PackageName}) }}" class="btn btn-default btn-sm">Get started</a>
                         </div>
                     </div>
                 {% endfor %}

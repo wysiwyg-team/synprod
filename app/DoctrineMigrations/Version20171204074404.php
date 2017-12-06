@@ -8,7 +8,7 @@ use Doctrine\DBAL\Schema\Schema;
 /**
  * Auto-generated Migration: Please modify to your needs!
  */
-class Version20170920122927 extends AbstractMigration
+class Version20171204074404 extends AbstractMigration
 {
     /**
      * @param Schema $schema
@@ -18,7 +18,8 @@ class Version20170920122927 extends AbstractMigration
         // this up() migration is auto-generated, please modify it to your needs
         $this->abortIf($this->connection->getDatabasePlatform()->getName() !== 'mysql', 'Migration can only be executed safely on \'mysql\'.');
 
-        $this->addSql('ALTER TABLE user ADD plain_password VARCHAR(255) NOT NULL');
+        $this->addSql('ALTER TABLE client ADD user INT NOT NULL');
+        $this->addSql('ALTER TABLE user ADD client INT NOT NULL');
     }
 
     /**
@@ -29,6 +30,7 @@ class Version20170920122927 extends AbstractMigration
         // this down() migration is auto-generated, please modify it to your needs
         $this->abortIf($this->connection->getDatabasePlatform()->getName() !== 'mysql', 'Migration can only be executed safely on \'mysql\'.');
 
-        $this->addSql('ALTER TABLE user DROP plain_password');
+        $this->addSql('ALTER TABLE client DROP user');
+        $this->addSql('ALTER TABLE user DROP client');
     }
 }
