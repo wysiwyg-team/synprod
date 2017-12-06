@@ -38,7 +38,7 @@ class Package
     /**
 
      * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Category", inversedBy="packages")
-     * @ORM\JoinColumn(nullable=false,name="category_id", referencedColumnName="id")
+     * @ORM\JoinColumn(nullable=false,name="category", referencedColumnName="id")
      * @ORM\Column(type="integer")
      */
     private $category;

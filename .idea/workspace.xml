@@ -2,44 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67915abe-64c5-4057-8f6c-65a3d1a3d931" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Api/Api.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Api/Controller/ClientApiConnectionController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Api/Controller/DefaultController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Api/Helper/ApiProblem.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Api/Helper/ApiProblemException.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Api/Helper/ResponseFactory.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Api/Security/TokenAuthenticator.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/ApiTransferData.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/ClientApiConnection.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/DoctrineMigrations/Version20170913150300.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/DoctrineMigrations/Version20170918081246.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/DoctrineMigrations/Version20170919083159.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/DoctrineMigrations/Version20170919131619.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/DoctrineMigrations/Version20170920122927.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/DoctrineMigrations/Version20171011083733.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/DoctrineMigrations/Version20171023131408.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/DoctrineMigrations/Version20171023140710.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/DoctrineMigrations/Version20171024143637.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/DoctrineMigrations/Version20171027104523.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/DoctrineMigrations/Version20171030130729.php" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/AppBundle/LoginFormAuthenticator.php" afterPath="$PROJECT_DIR$/src/AppBundle/Security/LoginFormAuthenticator.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/symfony2.xml" afterPath="$PROJECT_DIR$/.idea/symfony2.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AppKernel.php" afterPath="$PROJECT_DIR$/app/AppKernel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/default/prix.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/default/prix.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/parts/about/banner.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/parts/about/banner.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/routing.yml" afterPath="$PROJECT_DIR$/app/config/routing.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/security.yml" afterPath="$PROJECT_DIR$/app/config/security.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/services.yml" afterPath="$PROJECT_DIR$/app/config/services.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project_access.log" afterPath="$PROJECT_DIR$/project_access.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/PackageController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/PackageController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/DataFixtures/ORM/fixtures.yml" afterPath="$PROJECT_DIR$/src/AppBundle/DataFixtures/ORM/fixtures.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Category.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Category.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Client.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Client.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Package.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Package.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/User.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app.php" afterPath="$PROJECT_DIR$/web/app.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -57,11 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Api/Controller/DefaultController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state relative-caret-position="100">
+              <caret line="22" column="5" lean-forward="false" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
               <folding>
                 <element signature="e#34#60#0#PHP" expanded="true" />
               </folding>
@@ -69,24 +33,56 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="classes.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/var/cache/dev/classes.php">
+      <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1225">
-              <caret line="835" column="17" lean-forward="false" selection-start-line="835" selection-start-column="17" selection-end-line="835" selection-end-column="17" />
+            <state relative-caret-position="425">
+              <caret line="19" column="29" lean-forward="false" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+              <folding>
+                <element signature="e#522#541#1#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PackageRepository.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/PackageRepository.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Request.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/HttpFoundation/Request.php">
+      <file leaf-file-name="Package.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Package.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="39575">
-              <caret line="1592" column="20" lean-forward="false" selection-start-line="1592" selection-start-column="20" selection-end-line="1592" selection-end-column="20" />
+            <state relative-caret-position="181">
+              <caret line="40" column="52" lean-forward="false" selection-start-line="40" selection-start-column="52" selection-end-line="40" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="classes.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/var/cache/dev/classes.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="866" column="31" lean-forward="true" selection-start-line="866" selection-start-column="31" selection-end-line="866" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PackageController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/PackageController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="29" column="3" lean-forward="false" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
               <folding>
-                <element signature="e#7#236#0#PHP" expanded="false" />
-                <element signature="e#283#358#0#PHP" expanded="false" />
+                <element signature="e#917#936#1#PHP" expanded="false" />
+                <element signature="e#1257#1270#0#PHP" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -128,19 +124,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TokenAuthenticator.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Api/Security/TokenAuthenticator.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="825">
-              <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-              <folding>
-                <element signature="e#6#87#0#PHP" expanded="false" />
-                <element signature="e#115#146#0#PHP" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ClientApiConnection.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/ClientApiConnection.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -149,19 +132,6 @@
               <folding>
                 <element signature="e#6#87#0#PHP" expanded="false" />
                 <element signature="e#119#167#0#PHP" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ArrayCollection.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/doctrine/collections/lib/Doctrine/Common/Collections/ArrayCollection.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="850">
-              <caret line="52" column="20" lean-forward="false" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
-              <folding>
-                <element signature="e#6#987#0#PHP" expanded="false" />
-                <element signature="e#1029#1047#0#PHP" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -220,7 +190,6 @@
         <option value="$PROJECT_DIR$/app/Resources/views/package/show.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/parts/about/banner.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/default/prix.html.twig" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Controller/PackageController.php" />
         <option value="$PROJECT_DIR$/src/api/Controller/DafaultController.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/AppBundle.php" />
         <option value="$PROJECT_DIR$/src/Api/AppBundle.php" />
@@ -228,7 +197,6 @@
         <option value="$PROJECT_DIR$/src/Api/Api.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/app/DoctrineMigrations/Version20171030130729.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Package.php" />
         <option value="$PROJECT_DIR$/app/DoctrineMigrations/Version20171030132729.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Category.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/DataFixtures/ORM/fixtures.yml" />
@@ -249,6 +217,8 @@
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/ClientApiConnection.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/ApiTransferData.php" />
         <option value="$PROJECT_DIR$/src/Api/Controller/DefaultController.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/PackageController.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Package.php" />
       </list>
     </option>
   </component>
@@ -422,7 +392,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../symfony_application/blog" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/app/Resources/views/parts/banner.html.twig" />
-    <property name="SearchEverywhereHistoryKey" value="json&#9;null&#9;null&#10;log&#9;FILE&#9;file://C:/wamp64/www/synprod_symfony/var/logs/dev.log&#10;secu&#9;FILE&#9;file://C:/wamp64/www/synprod_symfony/app/config/security.yml&#10;To&#9;FILE&#9;file://C:/wamp64/www/synprod_symfony/src/Api/Security/TokenAuthenticator.php&#10;sec&#9;FILE&#9;file://C:/wamp64/www/synprod_symfony/app/config/security.yml&#10;cat&#9;null&#9;null&#10;pa&#9;FILE&#9;file://C:/wamp64/www/synprod_symfony/src/AppBundle/Entity/Package.php&#10;User&#9;FILE&#9;file://C:/wamp64/www/synprod_symfony/src/AppBundle/Entity/User.php&#10;style&#9;FILE&#9;file://C:/wamp64/www/synprod_symfony/web/assets/css/style.css&#10;RequestException.php&#9;FILE&#9;file://C:/wamp64/www/synprod_symfony/vendor/symfony/symfony/src/Symfony/Component/HttpFoundation/Exception/RequestExceptionInterface.php&#10;men&#9;FILE&#9;file://C:/wamp64/www/synprod_symfony/app/Resources/views/parts/menu.html.twig&#10;base&#9;FILE&#9;file://C:/wamp64/www/synprod_symfony/app/Resources/views/base.html.twig&#10;fixture&#9;FILE&#9;file://C:/wamp64/www/synprod_symfony/src/AppBundle/DataFixtures/ORM/fixtures.yml&#10;ser&#9;FILE&#9;file://C:/wamp64/www/synprod_symfony/app/config/services.yml&#10;menu&#9;FILE&#9;file://C:/wamp64/www/synprod_symfony/app/Resources/views/parts/menu.html.twig&#10;fix&#9;FILE&#9;file://C:/wamp64/www/synprod_symfony/src/AppBundle/DataFixtures/ORM/fixtures.yml&#10;UnitOfWork.php&#9;FILE&#9;file://C:/wamp64/www/synprod_symfony/vendor/doctrine/orm/lib/Doctrine/ORM/UnitOfWork.php&#10;DoctrineFi&#9;null&#9;null&#10;app&#9;FILE&#9;file://C:/wamp64/www/synprod_symfony/app/AppKernel.php&#10;doctrine-fixtures-bundle&#9;null&#9;null&#10;comp&#9;FILE&#9;file://C:/wamp64/www/synprod_symfony/composer.json&#10;App&#9;FILE&#9;file://C:/wamp64/www/synprod_symfony/src/AppBundle/AppBundle.php" />
+    <property name="SearchEverywhereHistoryKey" value="D&#9;FILE&#9;file://C:/wamp64/www/synprod_symfony/src/AppBundle/Controller/DefaultController.php&#10;pack&#9;FILE&#9;file://C:/wamp64/www/synprod_symfony/src/AppBundle/Controller/PackageController.php&#10;json&#9;null&#9;null&#10;log&#9;FILE&#9;file://C:/wamp64/www/synprod_symfony/var/logs/dev.log&#10;secu&#9;FILE&#9;file://C:/wamp64/www/synprod_symfony/app/config/security.yml&#10;To&#9;FILE&#9;file://C:/wamp64/www/synprod_symfony/src/Api/Security/TokenAuthenticator.php&#10;sec&#9;FILE&#9;file://C:/wamp64/www/synprod_symfony/app/config/security.yml&#10;cat&#9;null&#9;null&#10;pa&#9;FILE&#9;file://C:/wamp64/www/synprod_symfony/src/AppBundle/Entity/Package.php&#10;User&#9;FILE&#9;file://C:/wamp64/www/synprod_symfony/src/AppBundle/Entity/User.php&#10;style&#9;FILE&#9;file://C:/wamp64/www/synprod_symfony/web/assets/css/style.css&#10;RequestException.php&#9;FILE&#9;file://C:/wamp64/www/synprod_symfony/vendor/symfony/symfony/src/Symfony/Component/HttpFoundation/Exception/RequestExceptionInterface.php&#10;men&#9;FILE&#9;file://C:/wamp64/www/synprod_symfony/app/Resources/views/parts/menu.html.twig&#10;base&#9;FILE&#9;file://C:/wamp64/www/synprod_symfony/app/Resources/views/base.html.twig&#10;fixture&#9;FILE&#9;file://C:/wamp64/www/synprod_symfony/src/AppBundle/DataFixtures/ORM/fixtures.yml&#10;ser&#9;FILE&#9;file://C:/wamp64/www/synprod_symfony/app/config/services.yml&#10;menu&#9;FILE&#9;file://C:/wamp64/www/synprod_symfony/app/Resources/views/parts/menu.html.twig&#10;fix&#9;FILE&#9;file://C:/wamp64/www/synprod_symfony/src/AppBundle/DataFixtures/ORM/fixtures.yml&#10;UnitOfWork.php&#9;FILE&#9;file://C:/wamp64/www/synprod_symfony/vendor/doctrine/orm/lib/Doctrine/ORM/UnitOfWork.php&#10;DoctrineFi&#9;null&#9;null&#10;app&#9;FILE&#9;file://C:/wamp64/www/synprod_symfony/app/AppKernel.php&#10;doctrine-fixtures-bundle&#9;null&#9;null&#10;comp&#9;FILE&#9;file://C:/wamp64/www/synprod_symfony/composer.json&#10;App&#9;FILE&#9;file://C:/wamp64/www/synprod_symfony/src/AppBundle/AppBundle.php" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
   </component>
   <component name="RecentsManager">
@@ -572,24 +542,24 @@
       <workItem from="1512127317593" duration="8779000" />
       <workItem from="1512369375920" duration="27080000" />
       <workItem from="1512540514078" duration="2913000" />
-      <workItem from="1512558562192" duration="1605000" />
+      <workItem from="1512558562192" duration="3200000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="252554000" />
+    <option name="totallyTimeSpent" value="254149000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1928" height="1028" extended-state="1" />
+    <frame x="-4" y="-4" width="1928" height="1028" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3189189" sideWeight="0.49583828" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3189189" sideWeight="0.49583828" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.66944116" sideWeight="0.5043243" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936978" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24648649" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24648649" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8549346" sideWeight="0.49567568" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3027027" sideWeight="0.5041617" order="2" side_tool="true" content_ui="tabs" />
@@ -673,13 +643,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="550">
           <caret line="22" column="34" lean-forward="false" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/PackageController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1250">
-          <caret line="54" column="23" lean-forward="false" selection-start-line="54" selection-start-column="23" selection-end-line="54" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -781,14 +744,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Package.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1800">
-          <caret line="80" column="7" lean-forward="false" selection-start-line="80" selection-start-column="7" selection-end-line="80" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/AppBundle.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -806,24 +761,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Api/Controller/ClientApiConnectionController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
           <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/PackageRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1031,19 +972,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/var/cache/dev/classes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1225">
-          <caret line="835" column="17" lean-forward="false" selection-start-line="835" selection-start-column="17" selection-end-line="835" selection-end-column="17" />
+        <state relative-caret-position="200">
+          <caret line="866" column="31" lean-forward="true" selection-start-line="866" selection-start-column="31" selection-end-line="866" selection-end-column="31" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/PackageController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="29" column="3" lean-forward="false" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
+          <folding>
+            <element signature="e#917#936#1#PHP" expanded="false" />
+            <element signature="e#1257#1270#0#PHP" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Api/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="100">
+          <caret line="22" column="5" lean-forward="false" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
           <folding>
             <element signature="e#34#60#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="19" column="29" lean-forward="false" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+          <folding>
+            <element signature="e#522#541#1#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/PackageRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Package.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="40" column="52" lean-forward="false" selection-start-line="40" selection-start-column="52" selection-end-line="40" selection-end-column="52" />
+          <folding />
         </state>
       </provider>
     </entry>
